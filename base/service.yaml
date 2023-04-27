@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo
+  name: nginx
   labels:
-    app: demo
+    app: nginx
 spec:
   ports:
-    - port: 8080
+    - name: http
+      port: 80
       targetPort: 80
       protocol: TCP
   selector:
-    app: demo
+    app: nginx
   type: ClusterIP
