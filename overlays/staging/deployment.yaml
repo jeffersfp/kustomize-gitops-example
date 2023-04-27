@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   name: the-deployment
 spec:
-  replicas: 3
+  replicas: 1
   template:
     spec:
       containers:
        - name: the-container
-         image: nginx:1.23.0
+         image: nginx:1.24.0
